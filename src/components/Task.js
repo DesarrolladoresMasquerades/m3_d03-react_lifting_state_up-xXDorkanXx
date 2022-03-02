@@ -14,7 +14,7 @@ function Task(props) {
 
         <button 
           className="add"
-          onClick={() =>console.log("Task completed")}
+          onClick={() =>props.toggleTaskDone(props.task._id)}
         >
         {props.task.isDone
             ? <span>UNDO ❌</span>
